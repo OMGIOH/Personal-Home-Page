@@ -104,7 +104,7 @@
         }
     };
 
-    var currentLang = localStorage.getItem('lang') || 'zh';
+    var currentLang = localStorage.getItem('lang') || 'en';
 
     function applyLanguage(lang) {
         currentLang = lang;
