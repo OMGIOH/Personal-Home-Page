@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
     const navbar = document.getElementById('navbar');
     const navLinks = document.querySelector('.nav-links');
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
