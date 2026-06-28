@@ -188,6 +188,30 @@ nav.scrolled {
     width: 100%;
 }
 
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#lang-toggle {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    transition: all var(--transition);
+    letter-spacing: 0.5px;
+}
+
+#lang-toggle:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
 #theme-toggle {
     background: none;
     border: none;
