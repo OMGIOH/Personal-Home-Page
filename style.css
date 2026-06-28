@@ -1,7 +1,7 @@
-﻿:root {
-    --primary: #6c63ff;
-    --primary-dark: #5a52d5;
-    --primary-light: #8b83ff;
+:root {
+    --primary: #f59e0b;
+    --primary-dark: #d97706;
+    --primary-light: #fbbf24;
     --bg: #ffffff;
     --bg-secondary: #f8f9fa;
     --text: #2d3436;
@@ -14,9 +14,9 @@
 }
 
 [data-theme="dark"] {
-    --primary: #8b83ff;
-    --primary-dark: #6c63ff;
-    --primary-light: #a9a2ff;
+    --primary: #fbbf24;
+    --primary-dark: #f59e0b;
+    --primary-light: #fcd34d;
     --bg: #1a1a2e;
     --bg-secondary: #16213e;
     --text: #e0e0e0;
@@ -83,7 +83,7 @@ a:hover {
     border-color: var(--primary-dark);
     color: #fff;
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.4);
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
 }
 
 .btn-outline {
@@ -586,7 +586,7 @@ footer {
     opacity: 0;
     visibility: hidden;
     transition: all var(--transition);
-    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.4);
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
 }
 
 #back-to-top.visible {
