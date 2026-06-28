@@ -10,32 +10,37 @@
 <body>
     <nav id="navbar">
         <div class="nav-container">
-            <a href="#hero" class="nav-logo">Personal Home Page</a>
+            <a href="#hero" class="nav-logo" data-i18n="logo">Personal Home Page</a>
             <ul class="nav-links">
-                <li><a href="#hero">首页</a></li>
-                <li><a href="#about">关于</a></li>
-                <li><a href="#skills">技能</a></li>
-                <li><a href="#projects">项目</a></li>
-                <li><a href="#contact">联系</a></li>
+                <li><a href="#hero" data-i18n="nav_home">首页</a></li>
+                <li><a href="#about" data-i18n="nav_about">关于</a></li>
+                <li><a href="#skills" data-i18n="nav_skills">技能</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">项目</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">联系</a></li>
             </ul>
-            <button id="theme-toggle" aria-label="切换主题">
-                <i class="fas fa-moon"></i>
-            </button>
-            <button id="mobile-menu-btn" aria-label="菜单">
-                <i class="fas fa-bars"></i>
-            </button>
+            <div class="nav-actions">
+                <button id="lang-toggle" aria-label="切换语言">
+                    <span class="lang-text">EN</span>
+                </button>
+                <button id="theme-toggle" aria-label="切换主题">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="mobile-menu-btn" aria-label="菜单">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </div>
     </nav>
 
     <section id="hero">
         <div class="hero-content">
-            <p class="hero-greeting">你好，我是</p>
+            <p class="hero-greeting" data-i18n="hero_greeting">你好，我是</p>
             <h1 class="hero-name">Oliver Huang</h1>
-            <h2 class="hero-title">贵州民族大学硕士在读</h2>
-            <p class="hero-desc">专注于信息资源管理 & 数字人文研究</p>
+            <h2 class="hero-title" data-i18n="hero_title">贵州民族大学图书情报硕士在读</h2>
+            <p class="hero-desc" data-i18n="hero_desc">专注于信息资源管理 & 数字人文研究</p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">查看项目</a>
-                <a href="#contact" class="btn btn-outline">联系我</a>
+                <a href="#projects" class="btn btn-primary" data-i18n="hero_btn_projects">查看项目</a>
+                <a href="#contact" class="btn btn-outline" data-i18n="hero_btn_contact">联系我</a>
             </div>
         </div>
         <div class="hero-scroll-hint">
@@ -45,7 +50,7 @@
 
     <section id="about">
         <div class="container">
-            <h2 class="section-title">关于我</h2>
+            <h2 class="section-title" data-i18n="about_title">关于我</h2>
             <div class="about-grid">
                 <div class="about-image">
                     <div class="image-placeholder">
@@ -53,27 +58,27 @@
                     </div>
                 </div>
                 <div class="about-text">
-                    <p>这里是一段关于你的介绍。你可以描述你的背景、兴趣和职业方向。</p>
-                    <p>例如：我是一名热爱技术的研究者，专注于自然语言处理和深度学习领域。在学术研究和工程实践中积累了丰富的经验，善于将理论转化为实际应用。</p>
+                    <p data-i18n="about_p1">这里是一段关于你的介绍。你可以描述你的背景、兴趣和职业方向。</p>
+                    <p data-i18n="about_p2">例如：我是一名热爱技术的研究者，专注于自然语言处理和深度学习领域。在学术研究和工程实践中积累了丰富的经验，善于将理论转化为实际应用。</p>
                     <div class="about-info">
                         <div class="info-item">
-                            <span class="info-label">姓名</span>
+                            <span class="info-label" data-i18n="info_name_label">姓名</span>
                             <span class="info-value">Oliver Huang</span>
                         </div>
                         <div class="info-item">
-                            <span class="info-label">邮箱</span>
+                            <span class="info-label" data-i18n="info_email_label">邮箱</span>
                             <span class="info-value">your@email.com</span>
                         </div>
                         <div class="info-item">
-                            <span class="info-label">所在地</span>
-                            <span class="info-value">中国</span>
+                            <span class="info-label" data-i18n="info_location_label">所在地</span>
+                            <span class="info-value" data-i18n="info_location_value">中国</span>
                         </div>
                         <div class="info-item">
-                            <span class="info-label">状态</span>
-                            <span class="info-value">开放合作</span>
+                            <span class="info-label" data-i18n="info_status_label">状态</span>
+                            <span class="info-value" data-i18n="info_status_value">开放合作</span>
                         </div>
                     </div>
-                    <a href="#contact" class="btn btn-primary">了解更多</a>
+                    <a href="#contact" class="btn btn-primary" data-i18n="about_btn">了解更多</a>
                 </div>
             </div>
         </div>
@@ -81,42 +86,42 @@
 
     <section id="skills">
         <div class="container">
-            <h2 class="section-title">技能</h2>
+            <h2 class="section-title" data-i18n="skills_title">技能</h2>
             <div class="skills-grid">
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fab fa-python"></i></div>
                     <h3>Python</h3>
-                    <p>深度学习、数据处理、自动化脚本</p>
+                    <p data-i18n="skill_python_desc">深度学习、数据处理、自动化脚本</p>
                     <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fab fa-js-square"></i></div>
                     <h3>JavaScript</h3>
-                    <p>前端开发、Node.js、交互设计</p>
+                    <p data-i18n="skill_js_desc">前端开发、Node.js、交互设计</p>
                     <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fas fa-brain"></i></div>
-                    <h3>深度学习</h3>
+                    <h3 data-i18n="skill_dl_name">深度学习</h3>
                     <p>PyTorch、BERT、NLP</p>
                     <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fab fa-html5"></i></div>
                     <h3>HTML / CSS</h3>
-                    <p>响应式布局、现代设计</p>
+                    <p data-i18n="skill_html_desc">响应式布局、现代设计</p>
                     <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fas fa-database"></i></div>
-                    <h3>数据库</h3>
+                    <h3 data-i18n="skill_db_name">数据库</h3>
                     <p>MySQL、MongoDB、Redis</p>
                     <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
                     <h3>Git</h3>
-                    <p>版本控制、团队协作</p>
+                    <p data-i18n="skill_git_desc">版本控制、团队协作</p>
                     <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
                 </div>
             </div>
@@ -125,15 +130,15 @@
 
     <section id="projects">
         <div class="container">
-            <h2 class="section-title">项目</h2>
+            <h2 class="section-title" data-i18n="projects_title">项目</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder"><i class="fas fa-robot"></i></div>
                     </div>
                     <div class="project-info">
-                        <h3>BERT-CRF 命名实体识别</h3>
-                        <p>基于 BERT 和 CRF 的中文命名实体识别模型，支持多源语料训练与评估。</p>
+                        <h3 data-i18n="proj1_name">BERT-CRF 命名实体识别</h3>
+                        <p data-i18n="proj1_desc">基于 BERT 和 CRF 的中文命名实体识别模型，支持多源语料训练与评估。</p>
                         <div class="project-tags">
                             <span>Python</span><span>PyTorch</span><span>NLP</span>
                         </div>
@@ -148,8 +153,8 @@
                         <div class="project-placeholder"><i class="fas fa-chart-line"></i></div>
                     </div>
                     <div class="project-info">
-                        <h3>数据分析平台</h3>
-                        <p>交互式数据可视化平台，支持多维度数据探索与实时图表展示。</p>
+                        <h3 data-i18n="proj2_name">数据分析平台</h3>
+                        <p data-i18n="proj2_desc">交互式数据可视化平台，支持多维度数据探索与实时图表展示。</p>
                         <div class="project-tags">
                             <span>JavaScript</span><span>ECharts</span><span>Flask</span>
                         </div>
@@ -164,8 +169,8 @@
                         <div class="project-placeholder"><i class="fas fa-globe"></i></div>
                     </div>
                     <div class="project-info">
-                        <h3>个人主页</h3>
-                        <p>你正在浏览的这个网站，纯 HTML/CSS/JS 构建，支持暗色主题。</p>
+                        <h3 data-i18n="proj3_name">个人主页</h3>
+                        <p data-i18n="proj3_desc">你正在浏览的这个网站，纯 HTML/CSS/JS 构建，支持暗色主题与中英双语。</p>
                         <div class="project-tags">
                             <span>HTML</span><span>CSS</span><span>JavaScript</span>
                         </div>
@@ -181,17 +186,17 @@
 
     <section id="contact">
         <div class="container">
-            <h2 class="section-title">联系我</h2>
+            <h2 class="section-title" data-i18n="contact_title">联系我</h2>
             <div class="contact-grid">
                 <div class="contact-info">
-                    <p>如果你对我的工作感兴趣，或者有任何合作想法，欢迎随时联系我！</p>
+                    <p data-i18n="contact_desc">如果你对我的工作感兴趣，或者有任何合作想法，欢迎随时联系我！</p>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <span>your@email.com</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>中国</span>
+                        <span data-i18n="contact_location">中国</span>
                     </div>
                     <div class="social-links">
                         <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -201,18 +206,18 @@
                 </div>
                 <form id="contact-form" class="contact-form">
                     <div class="form-group">
-                        <input type="text" id="name" placeholder="你的姓名" required>
+                        <input type="text" id="name" data-i18n-placeholder="form_name" placeholder="你的姓名" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" placeholder="你的邮箱" required>
+                        <input type="email" id="email" data-i18n-placeholder="form_email" placeholder="你的邮箱" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" id="subject" placeholder="主题" required>
+                        <input type="text" id="subject" data-i18n-placeholder="form_subject" placeholder="主题" required>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" rows="5" placeholder="你的消息" required></textarea>
+                        <textarea id="message" rows="5" data-i18n-placeholder="form_message" placeholder="你的消息" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full">发送消息</button>
+                    <button type="submit" class="btn btn-primary btn-full" data-i18n="form_submit">发送消息</button>
                 </form>
             </div>
         </div>
